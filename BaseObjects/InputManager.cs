@@ -12,7 +12,6 @@ namespace BaseObjects
     /// </summary>
     public class InputManager
     {
-
         public Keys Left { get; set; }
         public Keys Right { get; set; }
         public Keys Up { get; set; }
