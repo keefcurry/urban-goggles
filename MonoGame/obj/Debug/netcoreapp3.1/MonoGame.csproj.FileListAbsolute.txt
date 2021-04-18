@@ -21,3 +21,6 @@ C:\Users\rtyre\source\repos\MonoGame\MonoGame\obj\Debug\netcoreapp3.1\MonoGame.c
 C:\Users\rtyre\source\repos\MonoGame\MonoGame\obj\Debug\netcoreapp3.1\MonoGame.dll
 C:\Users\rtyre\source\repos\MonoGame\MonoGame\obj\Debug\netcoreapp3.1\MonoGame.pdb
 C:\Users\rtyre\source\repos\MonoGame\MonoGame\obj\Debug\netcoreapp3.1\MonoGame.genruntimeconfig.cache
+C:\Users\rtyre\source\repos\MonoGame\MonoGame\bin\Debug\netcoreapp3.1\Content\wizardD.xnb
+C:\Users\rtyre\source\repos\MonoGame\MonoGame\bin\Debug\netcoreapp3.1\BaseObjects.dll
+C:\Users\rtyre\source\repos\MonoGame\MonoGame\bin\Debug\netcoreapp3.1\BaseObjects.pdb

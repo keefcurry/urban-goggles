@@ -11,72 +11,59 @@ namespace BaseObjects
             Texture = texture;
         }
 
-        public Texture2D Texture { get; set; }
-        public int Width { get; set; }
-        public int Height { get; set; }
-        public Vector2 Origin { get; set; }
-        public Vector2 Position { get; set; }
-        public Vector2 Velocity { get; set; }
-        public Rectangle BoundingBox { get; set; }
-        public Color Color { get; set; }
+        public Texture2D Texture;
+        public Vector2 Position;
+        public int Width;
+        public int Height;
+        public float Speed;
+        public Color Color;
+        public InputManager Input;
+        public Vector2 Origin { get { return new Vector2(Position.X + 16, Position.Y + 16); } }
+        public Vector2 Velocity = Vector2.Zero;
+        public Rectangle BoundingBox { get { return new Rectangle(x: (int)Position.X, y: (int)Position.Y, width: Texture.Width, height: Texture.Height); } }
 
-        public InputManager Input { get; set; }
 
-        // FIXME !!!
-        private void Move()
-        {
-            var key = Keyboard.GetState();
-            if (key.IsKeyDown(Input.Left))
-                Position = new Vector2(Position.X -1, Position.Y);
-            if (key.IsKeyDown(Input.Right))
-                Position = new Vector2(Position.X + 1, Position.Y);
-            if (key.IsKeyDown(Input.Down))
-                Position = new Vector2(Position.X, Position.Y + 1);
-            if (key.IsKeyDown(Input.Up))
-                Position = new Vector2(Position.X, Position.Y - 1);
-        }
-
-        public void Draw(SpriteBatch spriteBatch)
+        public virtual void Draw(SpriteBatch spriteBatch)
         {
             spriteBatch.Draw(Texture, BoundingBox, Color);
         }
 
-        public void Update(GameTime gameTime)
+        public virtual void Update(GameTime gameTime, BaseGameObject[] objects)
         {
-            
+
         }
 
         #region Collision
-        private bool CheckLeftSide(Rectangle rectangle)
+        protected bool IsTouchingLeft(BaseGameObject sprite)
         {
-            return (BoundingBox.Left < rectangle.Right &&
-                    BoundingBox.Right > rectangle.Left && 
-                    BoundingBox.Top > rectangle.Bottom &&
-                    BoundingBox.Bottom < rectangle.Top);
+            return (BoundingBox.Right + Velocity.X > sprite.BoundingBox.Left &&
+                    BoundingBox.Left < sprite.BoundingBox.Left &&                     
+                    BoundingBox.Top < sprite.BoundingBox.Bottom &&
+                    BoundingBox.Bottom > sprite.BoundingBox.Top);
         }
 
-        private bool CheckRightSide(Rectangle rectangle)
+        protected bool IsTouchingRight(BaseGameObject sprite)
         {
-            return (BoundingBox.Left < rectangle.Right &&
-                    BoundingBox.Right > rectangle.Left &&
-                    BoundingBox.Top > rectangle.Bottom &&
-                    BoundingBox.Bottom < rectangle.Top);
+            return (BoundingBox.Left + Velocity.X < sprite.BoundingBox.Right &&
+                    BoundingBox.Right > sprite.BoundingBox.Right &&
+                    BoundingBox.Top < sprite.BoundingBox.Bottom &&
+                    BoundingBox.Bottom > sprite.BoundingBox.Top);
         }
 
-        private bool CheckTopSide(Rectangle rectangle)
+        protected bool IsTouchingTop(BaseGameObject sprite)
         {
-            return (BoundingBox.Top > rectangle.Bottom &&
-                    BoundingBox.Bottom < rectangle.Top && 
-                    BoundingBox.Left < rectangle.Right &&
-                    BoundingBox.Right > rectangle.Left);
+            return (BoundingBox.Top < sprite.BoundingBox.Top &&
+                    BoundingBox.Bottom + Velocity.Y > sprite.BoundingBox.Top && 
+                    BoundingBox.Left < sprite.BoundingBox.Right &&
+                    BoundingBox.Right > sprite.BoundingBox.Left);
         }
 
-        private bool CheckBotSide(Rectangle rectangle)
+        protected bool IsTouchingBottom(BaseGameObject sprite)
         {
-            return (BoundingBox.Top < rectangle.Bottom &&
-                    BoundingBox.Bottom > rectangle.Top &&
-                    BoundingBox.Left < rectangle.Right &&
-                    BoundingBox.Right > rectangle.Left);
+            return (BoundingBox.Top + Velocity.Y < sprite.BoundingBox.Bottom &&
+                    BoundingBox.Bottom > sprite.BoundingBox.Bottom &&
+                    BoundingBox.Left < sprite.BoundingBox.Right &&
+                    BoundingBox.Right > sprite.BoundingBox.Left);
         }
 
 
