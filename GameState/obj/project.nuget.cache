@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "GEcuJY7Zkty2A+tRlkMiAqvg3C+J4+PV9r34dlu/k/5aEOjnaFxB7L2HlO60aBY3g+jZstRln1REOch0ItueBQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\rtyre\\source\\repos\\MonoGame\\GameState\\GameState.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\rtyre\\.nuget\\packages\\monogame.content.builder.task\\3.8.0.1641\\monogame.content.builder.task.3.8.0.1641.nupkg.sha512",
+    "C:\\Users\\rtyre\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.0.1641\\monogame.framework.desktopgl.3.8.0.1641.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31129.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoGame", "MonoGame\MonoGame.csproj", "{82A69E95-476C-464B-8E65-D186DAD4D6C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MonoGame", "MonoGame\MonoGame.csproj", "{82A69E95-476C-464B-8E65-D186DAD4D6C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseObjects", "BaseObjects\BaseObjects.csproj", "{67DFBE14-2DB4-4C7B-8B1A-45A532B58DB2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BaseObjects", "BaseObjects\BaseObjects.csproj", "{67DFBE14-2DB4-4C7B-8B1A-45A532B58DB2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameState", "GameState\GameState.csproj", "{D32F470A-BC87-4C7B-BA90-332836C5B2E5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{67DFBE14-2DB4-4C7B-8B1A-45A532B58DB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{67DFBE14-2DB4-4C7B-8B1A-45A532B58DB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{67DFBE14-2DB4-4C7B-8B1A-45A532B58DB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D32F470A-BC87-4C7B-BA90-332836C5B2E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D32F470A-BC87-4C7B-BA90-332836C5B2E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D32F470A-BC87-4C7B-BA90-332836C5B2E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D32F470A-BC87-4C7B-BA90-332836C5B2E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
