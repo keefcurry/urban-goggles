@@ -6,12 +6,19 @@ namespace BaseObjects
 {
     public class BaseGameObject : IBaseGameObject
     {
+        public BaseGameObject(Texture2D texture)
+        {
+            Texture = texture;
+        }
+
+        public Texture2D Texture { get; set; }
         public int Width { get; set; }
         public int Height { get; set; }
         public Vector2 Origin { get; set; }
         public Vector2 Position { get; set; }
         public Vector2 Velocity { get; set; }
         public Rectangle BoundingBox { get; set; }
+        public Color Color { get; set; }
 
         public InputManager Input { get; set; }
 
@@ -31,7 +38,7 @@ namespace BaseObjects
 
         public void Draw(SpriteBatch spriteBatch)
         {
-            
+            spriteBatch.Draw(Texture, BoundingBox, Color);
         }
 
         public void Update(GameTime gameTime)
