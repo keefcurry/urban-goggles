@@ -1,0 +1,9 @@
+C:\Users\rtyre\source\repos\MonoGame\BaseObjects\bin\Debug\netcoreapp3.1\BaseObjects.deps.json
+C:\Users\rtyre\source\repos\MonoGame\BaseObjects\bin\Debug\netcoreapp3.1\BaseObjects.dll
+C:\Users\rtyre\source\repos\MonoGame\BaseObjects\bin\Debug\netcoreapp3.1\BaseObjects.pdb
+C:\Users\rtyre\source\repos\MonoGame\BaseObjects\obj\Debug\netcoreapp3.1\BaseObjects.csprojAssemblyReference.cache
+C:\Users\rtyre\source\repos\MonoGame\BaseObjects\obj\Debug\netcoreapp3.1\BaseObjects.AssemblyInfoInputs.cache
+C:\Users\rtyre\source\repos\MonoGame\BaseObjects\obj\Debug\netcoreapp3.1\BaseObjects.AssemblyInfo.cs
+C:\Users\rtyre\source\repos\MonoGame\BaseObjects\obj\Debug\netcoreapp3.1\BaseObjects.csproj.CoreCompileInputs.cache
+C:\Users\rtyre\source\repos\MonoGame\BaseObjects\obj\Debug\netcoreapp3.1\BaseObjects.dll
+C:\Users\rtyre\source\repos\MonoGame\BaseObjects\obj\Debug\netcoreapp3.1\BaseObjects.pdb
