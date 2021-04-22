@@ -2,6 +2,8 @@
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using BaseObjects;
+using GameState;
+using System.Collections.Generic;
 
 namespace MonoGame
 {
@@ -10,7 +12,8 @@ namespace MonoGame
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
         Player player;
-        BaseGameObject[] objects;
+        List<BaseGameObject> objects;
+        BaseMap map = new BaseMap();
 
 
         public MonoGame()
@@ -32,6 +35,10 @@ namespace MonoGame
             
             _spriteBatch = new SpriteBatch(GraphicsDevice);
             var texture = Content.Load<Texture2D>("wizardD");
+            Globals.Red = Content.Load<Texture2D>("Red");
+            Globals.Purple = Content.Load<Texture2D>("Purple");
+            map.LoadMap();
+
             player = new Player(texture)
             {
                 Input = new InputManager()
@@ -64,8 +71,10 @@ namespace MonoGame
                 Color = Color.White
             };
 
-            objects = new BaseGameObject[1];
-            objects[0] = player2;
+            objects = new List<BaseGameObject>();
+            objects.Add(player2);
+            foreach (var i in map.GetGameObjects())
+                objects.Add(i);
             // TODO: use this.Content to load your game content here
         }
 
@@ -83,12 +92,14 @@ namespace MonoGame
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
+            
 
             // TODO: Add your drawing code here
             _spriteBatch.Begin();
-            player.Draw(_spriteBatch);
+
             foreach (var x in objects)
                 x.Draw(_spriteBatch);
+            player.Draw(_spriteBatch);
             _spriteBatch.End();
 
             base.Draw(gameTime);

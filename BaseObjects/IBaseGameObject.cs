@@ -10,6 +10,6 @@ namespace BaseObjects
     public interface IBaseGameObject
     {
         void Draw(SpriteBatch spriteBatch);
-        void Update(GameTime gameTime, BaseGameObject[] objects);
+        void Update(GameTime gameTime, List<BaseGameObject> objects);
     }
 }

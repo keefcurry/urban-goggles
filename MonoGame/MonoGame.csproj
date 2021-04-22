@@ -29,5 +29,6 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BaseObjects\BaseObjects.csproj" />
+    <ProjectReference Include="..\GameState\GameState.csproj" />
   </ItemGroup>
 </Project>

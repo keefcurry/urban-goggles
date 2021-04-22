@@ -24,3 +24,7 @@ C:\Users\rtyre\source\repos\MonoGame\MonoGame\obj\Debug\netcoreapp3.1\MonoGame.g
 C:\Users\rtyre\source\repos\MonoGame\MonoGame\bin\Debug\netcoreapp3.1\Content\wizardD.xnb
 C:\Users\rtyre\source\repos\MonoGame\MonoGame\bin\Debug\netcoreapp3.1\BaseObjects.dll
 C:\Users\rtyre\source\repos\MonoGame\MonoGame\bin\Debug\netcoreapp3.1\BaseObjects.pdb
+C:\Users\rtyre\source\repos\MonoGame\MonoGame\bin\Debug\netcoreapp3.1\Content\Purple.xnb
+C:\Users\rtyre\source\repos\MonoGame\MonoGame\bin\Debug\netcoreapp3.1\Content\Red.xnb
+C:\Users\rtyre\source\repos\MonoGame\MonoGame\bin\Debug\netcoreapp3.1\GameState.dll
+C:\Users\rtyre\source\repos\MonoGame\MonoGame\bin\Debug\netcoreapp3.1\GameState.pdb

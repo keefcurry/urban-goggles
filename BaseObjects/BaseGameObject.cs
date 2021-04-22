@@ -1,6 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using System.Collections.Generic;
 
 namespace BaseObjects
 {
@@ -28,7 +29,7 @@ namespace BaseObjects
             spriteBatch.Draw(Texture, BoundingBox, Color);
         }
 
-        public virtual void Update(GameTime gameTime, BaseGameObject[] objects)
+        public virtual void Update(GameTime gameTime, List<BaseGameObject> objects)
         {
 
         }

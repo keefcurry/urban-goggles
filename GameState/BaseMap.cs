@@ -2,27 +2,67 @@
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Design;
 using BaseObjects;
+using System.Collections.Generic;
 
 namespace GameState
 {
     public class BaseMap
     {
         public int MapId;
-        public BaseGameObject[] Tiles;
-        //public BaseGameObject[] MapObjects;
+        public int[,] Tiles;
+        public List<BaseGameObject> MapObjects;
         //public BaseGameObject[] NPC;
 
         public virtual void LoadMap(/*This is going to be the import from content*/)
         {
-            // this will populate each tile with their data
-        }
+            Tiles = new int[,] 
+            { 
+                { 1,1,1,1,1,1,1,1,1 }, 
+                { 1,0,0,0,0,0,0,0,1 }, 
+                { 1,0,0,0,0,0,0,0,1 },
+                { 1,0,0,0,0,0,0,0,1 },
+                { 1,0,0,0,0,0,0,0,1 },
+                { 1,0,0,0,0,0,0,0,1 },
+                { 1,1,1,1,1,1,1,1,1 },
+            };
 
-        public virtual void Draw(SpriteBatch spriteBatch)
-        {
-            foreach (var tile in Tiles)
+            MapObjects = new List<BaseGameObject>();
+            for(int i = 0; i < Tiles.GetLength(0); i++)
             {
-                
+                for(int j = 0; j < Tiles.GetLength(1); j++)
+                {
+                    if (Tiles[i, j] == 1)
+                        MapObjects.Add(new BaseGameObject(Globals.Red)
+                        {
+                            Position = new Vector2(j * 33, i * 33),
+                            Color = Color.White,
+                            Height = 32,
+                            Width = 32
+                        });
+                    if (Tiles[i, j] == 0)
+                        MapObjects.Add(new BaseGameObject(Globals.Purple)
+                        {
+                            Position = new Vector2(j * 33, i * 33),
+                            Color = Color.White,
+                            Height = 32,
+                            Width = 32
+                        });
+                }
             }
         }
+
+        public virtual List<BaseGameObject> GetGameObjects()
+        {
+            return MapObjects;
+        }
+        
+
+        //public virtual void Draw(SpriteBatch spriteBatch)
+        //{
+        //    for (int i = 0; i < MapObjects.Count; i++)
+        //    {
+        //       MapObjects[i].Draw(spriteBatch);
+        //    }
+        //}
     }
 }

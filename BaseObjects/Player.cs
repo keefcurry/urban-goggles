@@ -27,7 +27,7 @@ namespace BaseObjects
                 Velocity.Y -= Speed;
         }
 
-        public override void Update(GameTime gameTime, BaseGameObject[] objects)
+        public override void Update(GameTime gameTime, List<BaseGameObject> objects)
         {
             Move();
 
