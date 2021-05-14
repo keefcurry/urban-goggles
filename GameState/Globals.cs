@@ -10,5 +10,7 @@ namespace GameState
     {
         public static Texture2D Red;
         public static Texture2D Purple;
+        public static Texture2D Filled;
+        public static Texture2D Empty;
     }
 }

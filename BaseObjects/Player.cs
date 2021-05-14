@@ -8,15 +8,14 @@ namespace BaseObjects
 {
     public class Player : BaseGameObject
     {
-        public Player(Texture2D texture) : base(texture)
+        public Player(Texture2D texture) 
+            : base(texture)
         {
 
         }
-
-        // FIXME !!!
         private void Move()
         {
-
+            
             if (Keyboard.GetState().IsKeyDown(Input.Left))
                 Velocity.X -= Speed;
             if (Keyboard.GetState().IsKeyDown(Input.Right))
@@ -35,12 +34,14 @@ namespace BaseObjects
             {
                 if (sprite == this)
                     continue;
+                if(sprite.Collidable == true) {
                 if ((Velocity.X > 0 && IsTouchingLeft(sprite)) ||
                     (Velocity.X < 0 & IsTouchingRight(sprite)))
                     Velocity.X = 0;
                 if((Velocity.Y > 0 && IsTouchingTop(sprite)) || 
                     (Velocity.Y < 0 & IsTouchingBottom(sprite)))
-                    Velocity.Y = 0;
+                    Velocity.Y = 0;   
+                }
             }
             Position += Velocity;
             Velocity = Vector2.Zero;

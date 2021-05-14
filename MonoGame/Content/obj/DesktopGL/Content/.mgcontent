@@ -4,11 +4,15 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
+    <File>C:/Users/rtyre/source/repos/MonoGame/MonoGame/Content/EmptyBox.png</File>
+    <File>C:/Users/rtyre/source/repos/MonoGame/MonoGame/Content/FilledBox.png</File>
     <File>C:/Users/rtyre/source/repos/MonoGame/MonoGame/Content/Purple.png</File>
     <File>C:/Users/rtyre/source/repos/MonoGame/MonoGame/Content/Red.png</File>
     <File>C:/Users/rtyre/source/repos/MonoGame/MonoGame/Content/wizardD.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

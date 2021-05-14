@@ -28,3 +28,5 @@ C:\Users\rtyre\source\repos\MonoGame\MonoGame\bin\Debug\netcoreapp3.1\Content\Pu
 C:\Users\rtyre\source\repos\MonoGame\MonoGame\bin\Debug\netcoreapp3.1\Content\Red.xnb
 C:\Users\rtyre\source\repos\MonoGame\MonoGame\bin\Debug\netcoreapp3.1\GameState.dll
 C:\Users\rtyre\source\repos\MonoGame\MonoGame\bin\Debug\netcoreapp3.1\GameState.pdb
+C:\Users\rtyre\source\repos\MonoGame\MonoGame\bin\Debug\netcoreapp3.1\Content\EmptyBox.xnb
+C:\Users\rtyre\source\repos\MonoGame\MonoGame\bin\Debug\netcoreapp3.1\Content\FilledBox.xnb

@@ -12,7 +12,9 @@ namespace BaseObjects
             Texture = texture;
         }
 
+        public bool Collidable = true;
         public Texture2D Texture;
+        public Texture2D Texure2;
         public Vector2 Position;
         public int Width;
         public int Height;
