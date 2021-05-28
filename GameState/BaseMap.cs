@@ -38,7 +38,7 @@ namespace GameState
                     if (Tiles[i, j] == 1)
                         MapObjects.Add(new BaseGameObject(Globals.Red)
                         {
-                            Position = new Vector2(j * 33, i * 33),
+                            Position = new Vector2(j * 32, i * 32),
                             Color = Color.White,
                             Height = 32,
                             Width = 32
@@ -46,7 +46,7 @@ namespace GameState
                     if (Tiles[i, j] == 0)
                         MapObjects.Add(new BaseGameObject(Globals.Purple)
                         {
-                            Position = new Vector2(j * 33, i * 33),
+                            Position = new Vector2(j * 32, i * 32),
                             Color = Color.White,
                             Height = 32,
                             Width = 32,

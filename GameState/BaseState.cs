@@ -7,6 +7,8 @@ namespace GameState
 {
     public abstract class BaseState
     {
+        public abstract void Initialize();
+        public abstract void LoadContent();
         public abstract void Draw(SpriteBatch spriteBatch);
         public abstract void Update(GameTime gameTime);
     }

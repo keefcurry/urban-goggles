@@ -58,7 +58,6 @@ namespace GameState
                     && obj.Action != null)
                 {
                     obj.CheckBox();
-                    obj.Action.Invoke();
                 }
             }
         }

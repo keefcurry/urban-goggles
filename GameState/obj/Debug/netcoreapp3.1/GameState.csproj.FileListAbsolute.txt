@@ -10,3 +10,14 @@ C:\Users\rtyre\source\repos\MonoGame\GameState\obj\Debug\netcoreapp3.1\GameState
 C:\Users\rtyre\source\repos\MonoGame\GameState\obj\Debug\netcoreapp3.1\GameState.csproj.CopyComplete
 C:\Users\rtyre\source\repos\MonoGame\GameState\obj\Debug\netcoreapp3.1\GameState.dll
 C:\Users\rtyre\source\repos\MonoGame\GameState\obj\Debug\netcoreapp3.1\GameState.pdb
+C:\Users\rtyre\source\repos\urban-goggles\GameState\bin\Debug\netcoreapp3.1\GameState.deps.json
+C:\Users\rtyre\source\repos\urban-goggles\GameState\bin\Debug\netcoreapp3.1\GameState.dll
+C:\Users\rtyre\source\repos\urban-goggles\GameState\bin\Debug\netcoreapp3.1\GameState.pdb
+C:\Users\rtyre\source\repos\urban-goggles\GameState\bin\Debug\netcoreapp3.1\BaseObjects.dll
+C:\Users\rtyre\source\repos\urban-goggles\GameState\bin\Debug\netcoreapp3.1\BaseObjects.pdb
+C:\Users\rtyre\source\repos\urban-goggles\GameState\obj\Debug\netcoreapp3.1\GameState.csprojAssemblyReference.cache
+C:\Users\rtyre\source\repos\urban-goggles\GameState\obj\Debug\netcoreapp3.1\GameState.AssemblyInfoInputs.cache
+C:\Users\rtyre\source\repos\urban-goggles\GameState\obj\Debug\netcoreapp3.1\GameState.AssemblyInfo.cs
+C:\Users\rtyre\source\repos\urban-goggles\GameState\obj\Debug\netcoreapp3.1\GameState.csproj.CopyComplete
+C:\Users\rtyre\source\repos\urban-goggles\GameState\obj\Debug\netcoreapp3.1\GameState.dll
+C:\Users\rtyre\source\repos\urban-goggles\GameState\obj\Debug\netcoreapp3.1\GameState.pdb
