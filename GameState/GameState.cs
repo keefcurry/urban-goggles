@@ -22,6 +22,16 @@ namespace GameState
             
         }
 
+        public override void Initialize()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void LoadContent()
+        {
+            throw new NotImplementedException();
+        }
+
         public override void Update(GameTime gameTime)
         {
             
