@@ -1,6 +1,6 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
-"C:/Users/rtyre/source/repos/MonoGame/MonoGame/Content/EmptyBox.png","C:/Users/rtyre/source/repos/MonoGame/MonoGame/Content/bin/DesktopGL/Content/EmptyBox.xnb","TextureProcessor","Texture2DContent",186,4181,0.1372044
-"C:/Users/rtyre/source/repos/MonoGame/MonoGame/Content/FilledBox.png","C:/Users/rtyre/source/repos/MonoGame/MonoGame/Content/bin/DesktopGL/Content/FilledBox.xnb","TextureProcessor","Texture2DContent",235,4181,0.0037876
-"C:/Users/rtyre/source/repos/MonoGame/MonoGame/Content/Purple.png","C:/Users/rtyre/source/repos/MonoGame/MonoGame/Content/bin/DesktopGL/Content/Purple.xnb","TextureProcessor","Texture2DContent",120,4181,0.1302602
-"C:/Users/rtyre/source/repos/MonoGame/MonoGame/Content/Red.png","C:/Users/rtyre/source/repos/MonoGame/MonoGame/Content/bin/DesktopGL/Content/Red.xnb","TextureProcessor","Texture2DContent",120,4181,0.0043475
-"C:/Users/rtyre/source/repos/MonoGame/MonoGame/Content/wizardD.png","C:/Users/rtyre/source/repos/MonoGame/MonoGame/Content/bin/DesktopGL/Content/wizardD.xnb","TextureProcessor","Texture2DContent",437,4181,0.0024094
+"c:/Users/rtyre/source/repos/MonoGame/MonoGame/Content/EmptyBox.png","c:/Users/rtyre/source/repos/MonoGame/MonoGame/Content/bin/DesktopGL/Content/EmptyBox.xnb","TextureProcessor","Texture2DContent",186,4181,0.1608187
+"c:/Users/rtyre/source/repos/MonoGame/MonoGame/Content/FilledBox.png","c:/Users/rtyre/source/repos/MonoGame/MonoGame/Content/bin/DesktopGL/Content/FilledBox.xnb","TextureProcessor","Texture2DContent",235,4181,0.0032216
+"c:/Users/rtyre/source/repos/MonoGame/MonoGame/Content/Purple.png","c:/Users/rtyre/source/repos/MonoGame/MonoGame/Content/bin/DesktopGL/Content/Purple.xnb","TextureProcessor","Texture2DContent",120,4181,0.0013555
+"c:/Users/rtyre/source/repos/MonoGame/MonoGame/Content/Red.png","c:/Users/rtyre/source/repos/MonoGame/MonoGame/Content/bin/DesktopGL/Content/Red.xnb","TextureProcessor","Texture2DContent",120,4181,0.0014634
+"c:/Users/rtyre/source/repos/MonoGame/MonoGame/Content/wizardD.png","c:/Users/rtyre/source/repos/MonoGame/MonoGame/Content/bin/DesktopGL/Content/wizardD.xnb","TextureProcessor","Texture2DContent",437,4181,0.0012194

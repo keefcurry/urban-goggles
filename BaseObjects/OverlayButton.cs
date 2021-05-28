@@ -7,6 +7,8 @@ namespace BaseObjects
 {
     public class OverlayButton : BaseGameObject
     {
+        public Boolean active = false;
+        public Action Action;
         public OverlayButton(Texture2D texture) 
             : base(texture)
         {
@@ -22,10 +24,17 @@ namespace BaseObjects
 
         public void CheckBox()
         {
-            SwapTexture();
-            Action.Invoke();
+            if (active)
+            {
+                active = false;
+                SwapTexture();
+                Action.Invoke();
+            }
+            else if (!active)
+            {
+                active = true;
+                SwapTexture();
+            }
         }
-
-        public Action Action;
     }
 }

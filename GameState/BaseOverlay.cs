@@ -50,15 +50,12 @@ namespace GameState
 
         public virtual void Update(GameTime gameTime)
         {
-           
             foreach(var obj in OverlayObjects)
-            { 
-                if(Mouse.GetState().LeftButton == ButtonState.Pressed 
-                    && obj.BoundingBox.Contains(Mouse.GetState().Position)
-                    && obj.Action != null)
+            {  
+                if(Mouse.GetState().LeftButton == ButtonState.Pressed
+                    && obj.BoundingBox.Contains(Mouse.GetState().Position))
                 {
                     obj.CheckBox();
-                    obj.Action.Invoke();
                 }
             }
         }
